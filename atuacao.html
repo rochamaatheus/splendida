@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Otimizado -->
+    <title>
+      Atuação Nacional: Embalagens de Papelão para sua Região | Splendida
+    </title>
+    <meta
+      name="description"
+      content="Conheça a ampla atuação regional da Splendida. Entregamos embalagens de papelão de alta qualidade em São Paulo, Minas Gerais, Rio de Janeiro, Bahia e nos principais estados do Brasil."
+    />
+    <meta
+      name="keywords"
+      content="atuação regional, embalagens em todo o brasil, distribuidora nacional de embalagens, caixas de papelão sp, caixas de papelão mg, caixas de papelão rj"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+
+    <!-- Tailwind CSS e Fontes -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: 'Manrope', sans-serif;
+      }
+      .fade-in-section {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+      }
+      .fade-in-section.is-visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'blue-splendida': '#2C577F',
+              'blue-dark': '#002950',
+              'orange-cta': '#f97316',
+              'gray-light': '#f8f9fa',
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="bg-white text-gray-700">
+    <!-- Header (Padrão Consistente) -->
+    <header class="bg-white shadow-md fixed top-0 left-0 right-0 z-50">
+      <div class="bg-gray-100 py-1.5 text-sm border-b border-gray-200">
+        <div class="max-w-6xl mx-auto px-5 flex justify-between items-center">
+          <div class="flex items-center gap-2 text-gray-600">
+            📍 Rua São Roque 1135, Vila Japão - Itaquaquecetuba-SP
+          </div>
+          <div class="flex items-center gap-4">
+            <span class="hidden sm:flex items-center gap-1 text-gray-600"
+              >📞 (11) 2815-1023</span
+            >
+            <a
+              href="https://wa.me/5511945190641"
+              class="flex items-center gap-1 bg-green-500 text-white px-2 py-1 rounded-md text-xs font-medium hover:bg-green-600 transition-colors"
+              target="_blank"
+              >📱 (11 ) 94519-0641</a
+            >
+          </div>
+        </div>
+      </div>
+      <nav class="py-3 bg-white">
+        <div class="max-w-6xl mx-auto px-5 flex justify-between items-center">
+          <a href="index.html" class="flex items-center">
+            <div
+              class="bg-blue-splendida text-white px-3 py-2 rounded-md font-bold text-lg"
+            >
+              SPLENDIDA
+            </div>
+            <span
+              class="ml-3 text-gray-600 text-sm font-medium uppercase tracking-wider"
+              >Embalagens</span
+            >
+          </a>
+          <ul class="hidden md:flex items-center gap-1">
+            <li>
+              <a
+                href="index.html"
+                class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-blue-splendida transition-colors"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="quem-somos.html"
+                class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-blue-splendida transition-colors"
+                >Quem Somos</a
+              >
+            </li>
+            <li>
+              <a
+                href="embalagens-papelao.html"
+                class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-blue-splendida transition-colors"
+                >Embalagens</a
+              >
+            </li>
+            <li>
+              <a
+                href="atuacao-regional.html"
+                class="px-3 py-2 rounded-md text-sm font-semibold text-blue-splendida bg-blue-50"
+                >Atuação</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://splendidaembalagens.com.br/orcamento"
+                class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-blue-splendida transition-colors"
+                >Orçamento</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://splendidaembalagens.com.br/contato"
+                class="px-3 py-2 rounded-md text-sm font-medium text-gray-600 hover:text-blue-splendida transition-colors"
+                >Contato</a
+              >
+            </li>
+          </ul>
+          <button
+            class="md:hidden p-2 text-gray-600"
+            onclick="toggleMobileMenu(  )"
+            aria-label="Abrir menu"
+          >
+            <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+            </svg>
+          </button>
+        </div>
+        <div
+          id="mobileMenu"
+          class="hidden md:hidden mt-2 bg-white border-t border-gray-200"
+        >
+          <!-- Links do menu mobile aqui -->
+        </div>
+      </nav>
+    </header>
+
+    <main class="pt-[105px]">
+      <!-- Hero Section -->
+      <section class="relative bg-blue-dark text-white">
+        <div class="absolute inset-0">
+          <img
+            src="assets/images/worker-warehouse.jpg"
+            alt="Mapa do Brasil com rotas de entrega destacadas"
+            class="w-full h-full object-cover opacity-20"
+          />
+        </div>
+        <div class="relative max-w-6xl mx-auto px-5 py-20 md:py-28 text-center">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+            Nossa Atuação Regional: Qualidade e Agilidade Onde Você Estiver
+          </h1>
+          <p class="text-lg md:text-xl max-w-3xl mx-auto opacity-90">
+            Com uma logística eficiente, levamos nossas soluções em embalagens
+            para os principais polos industriais do país, garantindo o mesmo
+            padrão de excelência em todas as regiões.
+          </p>
+        </div>
+      </section>
+
+      <!-- Grid Unificado de Regiões -->
+      <section
+        id="regioes"
+        class="py-16 md:py-24 bg-gray-light fade-in-section"
+      >
+        <div class="max-w-6xl mx-auto px-5">
+          <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-blue-dark">
+              Encontre a Splendida na Sua Região
+            </h2>
+            <p class="text-lg text-gray-600 mt-4 max-w-2xl mx-auto">
+              Selecione sua localidade para conhecer as soluções e os benefícios
+              específicos que oferecemos para sua empresa.
+            </p>
+          </div>
+          <div
+            class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6"
+          >
+            <!-- SP Capital e Grande SP -->
+            <a
+              href="regionais/sao-paulo.html"
+              class="block bg-white p-6 rounded-lg border border-gray-200 text-center hover:shadow-lg hover:-translate-y-1 transition-all"
+            >
+              <h3 class="text-lg font-bold text-gray-800">
+                São Paulo (Capital e Grande SP)
+              </h3>
+            </a>
+            <!-- Alto Tietê -->
+            <a
+              href="regionais/alto-tiete.html"
+              class="block bg-white p-6 rounded-lg border border-gray-200 text-center hover:shadow-lg hover:-translate-y-1 transition-all"
+            >
+              <h3 class="text-lg font-bold text-gray-800">Alto Tietê</h3>
+            </a>
+            <!-- ABC -->
+            <a
+              href="regionais/abc.html"
+              class="block bg-white p-6 rounded-lg border border-gray-200 text-center hover:shadow-lg hover:-translate-y-1 transition-all"
+            >
+              <h3 class="text-lg font-bold text-gray-800">ABC Paulista</h3>
+            </a>
+            <!-- Vale do Paraíba -->
+            <a
+              href="regionais/vale-paraiba.html"
+              class="block bg-white p-6 rounded-lg border border-gray-200 text-center hover:shadow-lg hover:-translate-y-1 transition-all"
+            >
+              <h3 class="text-lg font-bold text-gray-800">Vale do Paraíba</h3>
+            </a>
+            <!-- Minas Gerais -->
+            <a
+              href="regionais/minas-gerais.html"
+              class="block bg-white p-6 rounded-lg border border-gray-200 text-center hover:shadow-lg hover:-translate-y-1 transition-all"
+            >
+              <h3 class="text-lg font-bold text-gray-800">Minas Gerais</h3>
+            </a>
+            <!-- Rio de Janeiro -->
+            <a
+              href="regionais/rio-de-janeiro.html"
+              class="block bg-white p-6 rounded-lg border border-gray-200 text-center hover:shadow-lg hover:-translate-y-1 transition-all"
+            >
+              <h3 class="text-lg font-bold text-gray-800">Rio de Janeiro</h3>
+            </a>
+            <!-- Bahia -->
+            <a
+              href="regionais/bahia.html"
+              class="block bg-white p-6 rounded-lg border border-gray-200 text-center hover:shadow-lg hover:-translate-y-1 transition-all"
+            >
+              <h3 class="text-lg font-bold text-gray-800">Bahia</h3>
+            </a>
+            <!-- Maranhão -->
+            <a
+              href="regionais/maranhao.html"
+              class="block bg-white p-6 rounded-lg border border-gray-200 text-center hover:shadow-lg hover:-translate-y-1 transition-all"
+            >
+              <h3 class="text-lg font-bold text-gray-800">Maranhão</h3>
+            </a>
+            <!-- Pernambuco -->
+            <a
+              href="regionais/pernambuco.html"
+              class="block bg-white p-6 rounded-lg border border-gray-200 text-center hover:shadow-lg hover:-translate-y-1 transition-all"
+            >
+              <h3 class="text-lg font-bold text-gray-800">Pernambuco</h3>
+            </a>
+            <!-- Rio Grande do Norte -->
+            <a
+              href="regionais/rio-grande-do-norte.html"
+              class="block bg-white p-6 rounded-lg border border-gray-200 text-center hover:shadow-lg hover:-translate-y-1 transition-all"
+            >
+              <h3 class="text-lg font-bold text-gray-800">
+                Rio Grande do Norte
+              </h3>
+            </a>
+            <!-- Mato Grosso -->
+            <a
+              href="regionais/mato-grosso.html"
+              class="block bg-white p-6 rounded-lg border border-gray-200 text-center hover:shadow-lg hover:-translate-y-1 transition-all"
+            >
+              <h3 class="text-lg font-bold text-gray-800">Mato Grosso</h3>
+            </a>
+            <!-- Pará -->
+            <a
+              href="regionais/para.html"
+              class="block bg-white p-6 rounded-lg border border-gray-200 text-center hover:shadow-lg hover:-translate-y-1 transition-all"
+            >
+              <h3 class="text-lg font-bold text-gray-800">Pará</h3>
+            </a>
+            <!-- Ceará -->
+            <a
+              href="regionais/ceara.html"
+              class="block bg-white p-6 rounded-lg border border-gray-200 text-center hover:shadow-lg hover:-translate-y-1 transition-all"
+            >
+              <h3 class="text-lg font-bold text-gray-800">Ceará</h3>
+            </a>
+            <!-- Espírito Santo -->
+            <a
+              href="regionais/espirito-santo.html"
+              class="block bg-white p-6 rounded-lg border border-gray-200 text-center hover:shadow-lg hover:-translate-y-1 transition-all"
+            >
+              <h3 class="text-lg font-bold text-gray-800">Espírito Santo</h3>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Final -->
+      <section class="bg-blue-dark text-white fade-in-section">
+        <div class="max-w-4xl mx-auto px-5 py-16 text-center">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            Sua Região Não Está na Lista?
+          </h2>
+          <p class="text-lg text-gray-300 mb-8">
+            Nossa capacidade logística pode surpreender você. Entre em contato
+            com nossa equipe para desenvolvermos um projeto de entrega para sua
+            região.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="https://splendidaembalagens.com.br/contato"
+              class="bg-orange-cta hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold text-lg transition-all transform hover:scale-105"
+            >
+              Fale Conosco!
+            </a>
+            <a
+              href="https://splendidaembalagens.com.br/orcamento"
+              class="bg-white/10 hover:bg-white/20 text-white px-8 py-3 rounded-lg font-semibold text-lg transition-all"
+            >
+              Solicitar Orçamento Personalizado
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer (Padrão Consistente ) -->
+    <footer
+      class="bg-blue-dark text-white py-12 border-t border-blue-splendida/20"
+    >
+      <div class="max-w-6xl mx-auto px-5">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div class="mb-6 md:mb-0">
+            <div
+              class="bg-blue-splendida text-white px-3 py-2 rounded-md font-bold text-lg inline-block mb-4"
+            >
+              SPLENDIDA
+            </div>
+            <p class="text-gray-300 text-sm">
+              Embalagens de papelão personalizadas para sua empresa. Qualidade,
+              agilidade e sustentabilidade.
+            </p>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Onde Estamos</h3>
+            <p class="text-gray-300 text-sm">
+              Rua São Roque 1135, Vila Japão Itaquaquecetuba-SP CEP: 08599-020
+            </p>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Contato</h3>
+            <ul class="space-y-2 text-sm">
+              <li class="text-gray-300">(11) 2815-1023</li>
+              <li class="text-gray-300">(11) 94519-0641</li>
+              <li class="text-gray-300">vendas2@splendida.com.br</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-lg font-semibold mb-4">Links Rápidos</h3>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a
+                  href="index.html"
+                  class="text-gray-300 hover:text-white transition-colors"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="quem-somos.html"
+                  class="text-gray-300 hover:text-white transition-colors"
+                  >Quem Somos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="embalagens-papelao.html"
+                  class="text-gray-300 hover:text-white transition-colors"
+                  >Embalagens</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://splendidaembalagens.com.br/contato"
+                  class="text-gray-300 hover:text-white transition-colors"
+                  >Contato</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400 text-xs"
+        >
+          <p>Copyright © 2024 Splendida. Todos os direitos reservados.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Botão Flutuante WhatsApp -->
+    <a
+      href="https://wa.me/5511945190641?text=Olá! Gostaria de saber mais sobre o atendimento na minha região."
+      class="fixed bottom-6 right-6 bg-green-500 text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl shadow-lg hover:scale-110 transition-transform duration-300 z-50"
+      target="_blank"
+      title="Fale conosco no WhatsApp"
+    >
+      📱
+    </a>
+
+    <script>
+      // Script para menu mobile
+      function toggleMobileMenu() {
+        const menu = document.getElementById('mobileMenu');
+        menu.classList.toggle('hidden');
+      }
+
+      // Script para animação de fade-in ao rolar
+      document.addEventListener('DOMContentLoaded', () => {
+        const sections = document.querySelectorAll('.fade-in-section');
+        const observer = new IntersectionObserver(
+          entries => {
+            entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.1 },
+        );
+
+        sections.forEach(section => {
+          observer.observe(section);
+        });
+      });
+    </script>
+  </body>
+</html>

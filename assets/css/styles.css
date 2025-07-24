@@ -1,0 +1,533 @@
+/* CSS Splendida - Seguindo padrão do site original */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap');
+
+/* Cores ORIGINAIS do site Splendida */
+:root {
+  --azul-principal: #2C577F;
+  --azul-escuro: #002950;
+  --cinza-claro: #f1f5f9;
+  --cinza-texto: #64748b;
+  --cinza-escuro: #1e293b;
+  --laranja-cta: #f97316;
+  --branco: #ffffff;
+  --azul-suave: #e2e8f0;
+  --background-section: #f8fafc;
+  --border-color: #e2e8f0;
+}
+
+/* Reset e base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: var(--cinza-escuro);
+  font-weight: 400;
+}
+
+/* Container principal */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+header {
+  background: white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+/* Barra superior - seguindo padrão original */
+.top-bar {
+  background: var(--background-section);
+  padding: 8px 0;
+  font-size: 13px;
+  color: var(--cinza-texto);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.top-bar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-bar .contact-info {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.top-bar .whatsapp {
+  background: #22c55e;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+/* Navegação principal - seguindo padrão original */
+.main-nav {
+  padding: 12px 0;
+  background: white;
+}
+
+.main-nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo - seguindo padrão original */
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-box {
+  background: var(--azul-principal);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+}
+
+.logo-subtitle {
+  margin-left: 10px;
+  color: var(--cinza-texto);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  font-weight: 500;
+}
+
+/* Navegação - mais discreta como no original */
+.nav-menu {
+  display: flex;
+  gap: 5px;
+  list-style: none;
+}
+
+.nav-badge {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 14px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--azul-escuro);
+  border: 1px solid var(--border-color);
+  transition: all 0.2s ease;
+  background: white;
+}
+
+.nav-badge:hover {
+  background: var(--azul-suave);
+  border-color: var(--azul-principal);
+  color: var(--azul-principal);
+}
+
+.badge-number {
+  background: var(--azul-suave);
+  color: var(--azul-principal);
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* Cores mais discretas dos badges - seguindo original */
+.badge-home { background: white; }
+.badge-home:hover { background: var(--azul-suave); }
+
+.badge-ecommerce { background: white; }
+.badge-ecommerce:hover { background: var(--azul-suave); }
+
+.badge-industria { background: white; }
+.badge-industria:hover { background: var(--azul-suave); }
+
+.badge-regioes { background: white; }
+.badge-regioes:hover { background: var(--azul-suave); }
+
+.badge-orcamento { background: white; }
+.badge-orcamento:hover { background: var(--azul-suave); }
+
+.badge-contato { background: white; }
+.badge-contato:hover { background: var(--azul-suave); }
+
+/* Hero Section - seguindo padrão original */
+.hero {
+  background: linear-gradient(rgba(44, 87, 127, 0.8), rgba(0, 41, 80, 0.8)), url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  min-height: 55vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-top: 85px;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+  opacity: 0.9;
+  max-width: 500px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* Botões - seguindo padrão original */
+.btn-primary {
+  background: var(--laranja-cta);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-primary:hover {
+  background: #ea580c;
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(249, 115, 22, 0.3);
+}
+
+.btn-secondary {
+  background: var(--azul-principal);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-secondary:hover {
+  background: var(--azul-escuro);
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(44, 87, 127, 0.3);
+}
+
+/* Seções - seguindo padrão original */
+.section {
+  padding: 50px 0;
+}
+
+.section-gray {
+  background: var(--background-section);
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--azul-escuro);
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: var(--cinza-texto);
+  text-align: center;
+  margin-bottom: 40px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 400;
+}
+
+/* Grid layouts - mais compacto como original */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* Cards - seguindo padrão original */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 4px;
+  text-align: center;
+  transition: all 0.2s ease;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--azul-escuro);
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: var(--cinza-texto);
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+/* Seção de números - seguindo padrão original */
+.numbers-section {
+  background: var(--background-section);
+  padding: 40px 0;
+}
+
+.number-item {
+  text-align: center;
+}
+
+.number-value {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--azul-principal);
+  line-height: 1;
+  margin-bottom: 8px;
+}
+
+.number-label {
+  color: var(--cinza-texto);
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* Ícones - usando SVG como no original */
+.icon {
+  width: 45px;
+  height: 45px;
+  margin: 0 auto 15px;
+  background: var(--azul-principal);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+}
+
+/* Footer - seguindo padrão original */
+footer {
+  background: var(--azul-escuro);
+  color: white;
+  padding: 35px 0 20px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+.footer-section h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: white;
+}
+
+.footer-section p,
+.footer-section a {
+  color: #cbd5e1;
+  text-decoration: none;
+  line-height: 1.6;
+  font-size: 13px;
+}
+
+.footer-section a:hover {
+  color: white;
+}
+
+.footer-bottom {
+  border-top: 1px solid #334155;
+  padding-top: 15px;
+  text-align: center;
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .hero {
+    margin-top: 75px;
+    min-height: 45vh;
+  }
+  
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .nav-menu {
+    display: none;
+  }
+  
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .number-value {
+    font-size: 2.5rem;
+  }
+  
+  .section-title {
+    font-size: 1.7rem;
+  }
+  
+  .section {
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .hero-content h1 {
+    font-size: 1.7rem;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+  }
+  
+  .top-bar .container {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+  
+  .logo-box {
+    font-size: 16px;
+    padding: 6px 10px;
+  }
+}
+
+
+/* Botão Flutuante WhatsApp */
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 20px;
+  right: 20px;
+  background: #25d366;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 24px;
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+.whatsapp-float:hover {
+  background: #128c7e;
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+  color: white;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+  }
+  50% {
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.7);
+  }
+  100% {
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+  }
+}
+
+/* Responsividade para botão WhatsApp */
+@media (max-width: 768px) {
+  .whatsapp-float {
+    width: 55px;
+    height: 55px;
+    bottom: 15px;
+    right: 15px;
+    font-size: 22px;
+  }
+}
+
